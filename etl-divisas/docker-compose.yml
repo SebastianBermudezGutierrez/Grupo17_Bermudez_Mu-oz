@@ -1,0 +1,51 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: divisas_postgres
+    environment:
+      POSTGRES_DB: divisas_db
+      POSTGRES_USER: etl_user
+      POSTGRES_PASSWORD: etl1234
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - divisas_net
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: divisas_pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@divisas.com
+      PGADMIN_DEFAULT_PASSWORD: admin1234
+    ports:
+      - "8080:80"
+    depends_on:
+      - postgres
+    networks:
+      - divisas_net
+
+  etl:
+    build: .
+    container_name: divisas_etl
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: divisas_db
+      DB_USER: etl_user
+      DB_PASSWORD: etl1234
+    depends_on:
+      - postgres
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+    networks:
+      - divisas_net
+
+networks:
+  divisas_net:
+    driver: bridge
+
+volumes:
+  postgres_data:
