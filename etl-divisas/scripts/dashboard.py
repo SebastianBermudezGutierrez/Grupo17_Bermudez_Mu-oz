@@ -21,7 +21,12 @@ def conectar():
 @st.cache_data(ttl=60)
 def cargar_datos():
     conn = conectar()
-    df = pd.read_sql("SELECT * FROM tasas_cambio ORDER BY fecha_extraccion DESC", conn)
+    df = pd.read_sql("""
+        SELECT DISTINCT ON (moneda_destino) *
+        FROM tasas_cambio
+        WHERE fecha_actualizacion_api != 'simulado'
+        ORDER BY moneda_destino, fecha_extraccion DESC
+    """, conn)
     conn.close()
     return df
 

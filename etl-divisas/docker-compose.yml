@@ -43,6 +43,25 @@ services:
     networks:
       - divisas_net
 
+  streamlit:
+    build: .
+    container_name: divisas_streamlit
+    command: streamlit run scripts/dashboard.py --server.port=8501 --server.address=0.0.0.0
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_NAME: divisas_db
+      DB_USER: etl_user
+      DB_PASSWORD: etl1234
+    ports:
+      - "8501:8501"
+    depends_on:
+      - postgres
+    volumes:
+      - ./data:/app/data
+    networks:
+      - divisas_net
+
 networks:
   divisas_net:
     driver: bridge
