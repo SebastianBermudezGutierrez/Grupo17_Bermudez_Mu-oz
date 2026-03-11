@@ -1,0 +1,74 @@
+[
+  {
+    "moneda_base": "USD",
+    "moneda_destino": "EUR",
+    "tasa_cambio": 0.8595,
+    "fecha_actualizacion_api": "Thu, 05 Mar 2026 00:00:01 +0000",
+    "proxima_actualizacion_api": "Fri, 06 Mar 2026 00:00:01 +0000",
+    "fecha_extraccion": "2026-03-05T06:51:44.835221",
+    "inversa": 1.163467
+  },
+  {
+    "moneda_base": "USD",
+    "moneda_destino": "COP",
+    "tasa_cambio": 3788.6213,
+    "fecha_actualizacion_api": "Thu, 05 Mar 2026 00:00:01 +0000",
+    "proxima_actualizacion_api": "Fri, 06 Mar 2026 00:00:01 +0000",
+    "fecha_extraccion": "2026-03-05T06:51:44.835255",
+    "inversa": 0.000264
+  },
+  {
+    "moneda_base": "USD",
+    "moneda_destino": "GBP",
+    "tasa_cambio": 0.7483,
+    "fecha_actualizacion_api": "Thu, 05 Mar 2026 00:00:01 +0000",
+    "proxima_actualizacion_api": "Fri, 06 Mar 2026 00:00:01 +0000",
+    "fecha_extraccion": "2026-03-05T06:51:44.835262",
+    "inversa": 1.336362
+  },
+  {
+    "moneda_base": "USD",
+    "moneda_destino": "JPY",
+    "tasa_cambio": 157.1276,
+    "fecha_actualizacion_api": "Thu, 05 Mar 2026 00:00:01 +0000",
+    "proxima_actualizacion_api": "Fri, 06 Mar 2026 00:00:01 +0000",
+    "fecha_extraccion": "2026-03-05T06:51:44.835266",
+    "inversa": 0.006364
+  },
+  {
+    "moneda_base": "USD",
+    "moneda_destino": "BRL",
+    "tasa_cambio": 5.2303,
+    "fecha_actualizacion_api": "Thu, 05 Mar 2026 00:00:01 +0000",
+    "proxima_actualizacion_api": "Fri, 06 Mar 2026 00:00:01 +0000",
+    "fecha_extraccion": "2026-03-05T06:51:44.835270",
+    "inversa": 0.191194
+  },
+  {
+    "moneda_base": "USD",
+    "moneda_destino": "MXN",
+    "tasa_cambio": 17.5878,
+    "fecha_actualizacion_api": "Thu, 05 Mar 2026 00:00:01 +0000",
+    "proxima_actualizacion_api": "Fri, 06 Mar 2026 00:00:01 +0000",
+    "fecha_extraccion": "2026-03-05T06:51:44.835274",
+    "inversa": 0.056858
+  },
+  {
+    "moneda_base": "USD",
+    "moneda_destino": "CAD",
+    "tasa_cambio": 1.3655,
+    "fecha_actualizacion_api": "Thu, 05 Mar 2026 00:00:01 +0000",
+    "proxima_actualizacion_api": "Fri, 06 Mar 2026 00:00:01 +0000",
+    "fecha_extraccion": "2026-03-05T06:51:44.835278",
+    "inversa": 0.732332
+  },
+  {
+    "moneda_base": "USD",
+    "moneda_destino": "AUD",
+    "tasa_cambio": 1.4158,
+    "fecha_actualizacion_api": "Thu, 05 Mar 2026 00:00:01 +0000",
+    "proxima_actualizacion_api": "Fri, 06 Mar 2026 00:00:01 +0000",
+    "fecha_extraccion": "2026-03-05T06:51:44.835282",
+    "inversa": 0.706314
+  }
+]

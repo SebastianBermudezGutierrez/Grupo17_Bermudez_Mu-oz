@@ -1,0 +1,20 @@
+2026-03-05 01:18:51,042 - INFO - Conectando a API para USD...
+2026-03-05 01:18:51,586 - ERROR - Error de conexión: 404 Client Error: Not Found for url: https://v6.exchangerate-api.com/v6/ccc1df333eabf4a429004fd2/latest/USD/None/latest/USD
+2026-03-05 01:20:11,535 - INFO - Conectando a API para USD...
+2026-03-05 01:20:15,102 - INFO - Datos extraídos correctamente
+2026-03-05 01:20:15,123 - INFO - 166 monedas procesadas
+2026-03-05 01:20:15,140 - INFO - Datos guardados en data/exchange_rates.csv
+2026-03-05 01:58:57,917 - INFO - ==================================================
+2026-03-05 01:58:57,918 - INFO - INICIANDO EXTRACCIÓN DE TASAS DE CAMBIO
+2026-03-05 01:58:57,918 - INFO - ==================================================
+2026-03-05 01:58:58,503 - INFO - ✅ Tasas extraídas para base USD
+2026-03-05 01:58:58,505 - INFO - 📊 8 registros procesados
+2026-03-05 01:58:58,507 - INFO - 📁 JSON guardados en data/
+2026-03-05 01:58:58,528 - INFO - 📁 CSV guardados en data/
+2026-03-05 06:51:44,450 - INFO - ==================================================
+2026-03-05 06:51:44,451 - INFO - INICIANDO EXTRACCIÓN DE TASAS DE CAMBIO
+2026-03-05 06:51:44,451 - INFO - ==================================================
+2026-03-05 06:51:44,833 - INFO - ✅ Tasas extraídas para base USD
+2026-03-05 06:51:44,835 - INFO - 📊 8 registros procesados
+2026-03-05 06:51:44,839 - INFO - 📁 JSON guardados en data/
+2026-03-05 06:51:44,849 - INFO - 📁 CSV guardados en data/
