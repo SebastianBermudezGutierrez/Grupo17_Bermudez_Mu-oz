@@ -7,15 +7,16 @@ import os
 st.set_page_config(page_title="Monitor de Divisas", page_icon="💱", layout="wide")
 
 st.title("💱 Monitor de Tasas de Cambio")
-st.markdown("Datos en tiempo real desde PostgreSQL")
+st.markdown("Datos en tiempo real desde Supabase ☁️")
 
 def conectar():
     return psycopg2.connect(
-        host=os.getenv('DB_HOST', 'localhost'),
-        port=os.getenv('DB_PORT', '5432'),
-        database=os.getenv('DB_NAME', 'divisas_db'),
-        user=os.getenv('DB_USER', 'etl_user'),
-        password=os.getenv('DB_PASSWORD', 'etl1234')
+        host="aws-1-us-west-2.pooler.supabase.com",
+        port=5432,
+        database="postgres",
+        user="postgres.txqesbftucgqmfkkpake",
+        password="57ab/EYTQj!9Ly9",
+        sslmode="require"
     )
 
 @st.cache_data(ttl=60)
